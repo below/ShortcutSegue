@@ -10,16 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func jump () {
+        
+        let storyboard = self.storyboard!
+        
+        // This depends a bit from where you are coming. Sometimes you don't want the last viewController on the stack
+        var controllers : [UIViewController] = self.navigationController!.viewControllers
+
+        var controller = storyboard.instantiateViewController(withIdentifier: "B")
+        // Remember to do the things here you'd do in prepareForSegue!
+        controllers.append(controller)
+        
+        controller = storyboard.instantiateViewController(withIdentifier: "C")
+        controllers.append(controller)
+        
+        // This is supposed to be the best way to set a different "stack", according
+        // to some docs I no longer seem to be able to find.
+        self.navigationController!.setViewControllers(controllers, animated: true)
+
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

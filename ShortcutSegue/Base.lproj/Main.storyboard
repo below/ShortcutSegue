@@ -29,7 +29,7 @@
         <!--A-->
         <scene sceneID="sSn-bu-0UL">
             <objects>
-                <viewController id="jmW-IH-1kP" sceneMemberID="viewController">
+                <viewController id="jmW-IH-1kP" customClass="ViewController" customModule="ShortcutSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KIu-vi-K0o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3h-bv-w68">
                                 <rect key="frame" x="141" y="319" width="94" height="30"/>
                                 <state key="normal" title="Jump To C ➾ "/>
+                                <connections>
+                                    <action selector="jump" destination="jmW-IH-1kP" eventType="touchUpInside" id="HaK-na-ZnH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +75,7 @@
         <!--B-->
         <scene sceneID="LWB-x6-Byg">
             <objects>
-                <viewController id="8lU-vg-EPk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="8lU-vg-EPk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ASa-f9-5nJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +112,7 @@
         <!--C-->
         <scene sceneID="VJr-op-gxz">
             <objects>
-                <viewController id="pvA-QS-rTy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="C" id="pvA-QS-rTy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cX-CW-8dv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
