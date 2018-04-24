@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYz-zb-TdN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWe-fe-z5G">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWe-fe-z5G">
                                 <rect key="frame" x="163" y="257" width="49" height="30"/>
                                 <state key="normal" title="Next →"/>
                                 <connections>
@@ -96,6 +96,7 @@
                             <constraint firstItem="cfS-3W-S2P" firstAttribute="top" secondItem="Oi8-zx-5ju" secondAttribute="top" constant="32" id="EhY-Mp-i2B"/>
                             <constraint firstItem="VWe-fe-z5G" firstAttribute="top" secondItem="cfS-3W-S2P" secondAttribute="bottom" constant="8" id="c65-bJ-tc3"/>
                             <constraint firstItem="cfS-3W-S2P" firstAttribute="centerX" secondItem="ASa-f9-5nJ" secondAttribute="centerX" id="qVU-m6-mKs"/>
+                            <constraint firstItem="VWe-fe-z5G" firstAttribute="centerX" secondItem="ASa-f9-5nJ" secondAttribute="centerX" id="sxe-K6-Gd4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oi8-zx-5ju"/>
                     </view>
